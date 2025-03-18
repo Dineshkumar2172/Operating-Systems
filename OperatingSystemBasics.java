@@ -13,4 +13,13 @@ public class OperatingSystemBasics {
     //          -> execute concurrently - means all the devices or controllers can execute all at a same time i.r. we can use keyboard while watching movie but we don't experience lag, because all of em work concurrently.
     //          -> Like in above scenario, point 3 comes into play.
     // 3. To ensure orderly access to the shared memory, a memory controller is provided whose function is to synchronise access to the memory.
+
+    // some important terms:
+    // 1. Bootstrap program: -> The initial program that runs when a computer is powered up or rebooted.
+    //                       -> It is stored in the ROM. (secondary memory)
+    //                       -> It must know how to load the OS and start executing that system.
+    //                       -> It must locate and load into memory the OS kernel.
+    // 2. Interrupt: -> The occurence of an event is usually signalled by an interrupt from hardware or software.
+    //               -> Hardware may trigger an interrupt at any time by sending a signal to the CPU, usually by the way of the system bus.
+    // 3. System Call (Monitor call) ->Software may trigger an interrupt by executing a special operation called system call.
 }
