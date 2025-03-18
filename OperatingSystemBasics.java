@@ -22,4 +22,42 @@ public class OperatingSystemBasics {
     // 2. Interrupt: -> The occurence of an event is usually signalled by an interrupt from hardware or software.
     //               -> Hardware may trigger an interrupt at any time by sending a signal to the CPU, usually by the way of the system bus.
     // 3. System Call (Monitor call) ->Software may trigger an interrupt by executing a special operation called system call.
+
+    /**
+     * 
+     * # How CPU Processes 2 + 2
+
+        1. **Instruction in RAM**  
+        - The program instruction `ADD 2, 2` is loaded into RAM.  
+
+        2. **CPU Fetches Instruction**  
+        - The CPU reads the `ADD 2, 2` instruction from RAM into the **Instruction Register**.  
+
+        3. **Instruction Decoding**  
+        - The CPU decodes the instruction to understand that it needs to perform an addition.  
+
+        4. **Loading Data into Registers**  
+        - The CPU loads `2` into **Register1** and `2` into **Register2**.  
+
+        5. **Performing the Addition (ALU Execution)**  
+        - The **Arithmetic Logic Unit (ALU)** adds the values:  
+            ```
+            Register3 = Register1 + Register2  (2 + 2 = 4)
+            ```
+
+        6. **Storing the Result**  
+        - The result `4` is stored in a register for immediate use.  
+
+        7. **Output or Storage**  
+        - If required, the result is sent to RAM for later use.  
+        - If it's an immediate result, the CPU sends `4` to the output (e.g., terminal, monitor).  
+
+        # Key Takeaways  
+        ✅ The CPU is the **only component** that performs computation.  
+        ✅ RAM stores instructions & data temporarily.  
+        ✅ Registers inside the CPU store values for fast access.  
+        ✅ ALU inside the CPU handles arithmetic operations.  
+
+     * 
+     */
 }
