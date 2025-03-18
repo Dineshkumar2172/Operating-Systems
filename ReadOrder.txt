@@ -4,3 +4,4 @@
 4. Paging
 5. Process
 6. ContextSwitching
+7. CPUSchedulingAlgorithm.md
