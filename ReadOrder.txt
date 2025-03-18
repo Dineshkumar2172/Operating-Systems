@@ -5,3 +5,4 @@
 5. Process
 6. ContextSwitching
 7. CPUSchedulingAlgorithm.md
+8. MemoryPagingSegmentation.md
